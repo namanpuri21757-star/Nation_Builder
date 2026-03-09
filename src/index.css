@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Source Sans 3", sans-serif;
+  
+  --color-presidential-navy: #0d2b5e;
+  --color-american-red: #c8102e;
+  --color-presidential-gold: #c9a84c;
+  --color-paper: #faf7f2;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-presidential-navy font-sans;
+  }
+}
+
+.lined-paper {
+  background-image: repeating-linear-gradient(transparent, transparent 31px, #e5e5e5 31px, #e5e5e5 32px);
+  background-size: 100% 32px;
+}
+
+.odometer {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10vh) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  animation: confetti-fall 3s linear infinite;
+}

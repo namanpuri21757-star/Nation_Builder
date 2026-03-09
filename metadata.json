@@ -1,0 +1,5 @@
+{
+  "name": "Nation Builder",
+  "description": "A presidential fiscal policy simulator for AP Economics students. Manage the federal budget, respond to crises, and lead the nation through 4 years of economic challenges.",
+  "requestFramePermissions": []
+}
